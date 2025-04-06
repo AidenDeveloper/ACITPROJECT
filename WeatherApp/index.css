@@ -73,6 +73,20 @@ body {
   border: 1px solid #beb0ff;
   transition: 0.3s ease;
 }
+#getWeatherBtn {
+  height: 54px;
+  width: 56px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #fff;
+  color: #5f41e4;
+  border: 1px solid #beb0ff;
+  transition: 0.3s ease;
+}
 .search-section .location-button:hover {
   color: #fff;
   background: #5f41e4;
@@ -87,7 +101,7 @@ body {
   top: 50%;
   width: 100%;
   display: none;
-  padding: 40px;
+  margin-top: 25px;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -118,7 +132,7 @@ body.show-no-results .weather-section {
   width: 140px;
   aspect-ratio: 1;
 }
-.current-weather .temperature {
+.current-weather .temp {
   font-size: 3.38rem;
   margin: 23px 0;
   display: flex;
@@ -128,7 +142,7 @@ body.show-no-results .weather-section {
   font-weight: 500;
   margin: 5px 0 0 2px;
 }
-.current-weather .description {
+.current-weather .city {
   font-weight: 500;
   font-size: 1.25rem;
 }
@@ -160,7 +174,9 @@ body.show-no-results .weather-section {
   width: 28px;
   aspect-ratio: 1;
 }
-
+.weather-section{
+  display: none;
+}
 @media (max-width: 624px) {
   body {
     padding: 15px;
@@ -169,7 +185,7 @@ body.show-no-results .weather-section {
     padding: 20px;
   }
   .no-results {
-    padding: 30px;
+    margin-top: 25px;
   }
   .hourly-weather {
     padding: 16px 20px;
